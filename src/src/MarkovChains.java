@@ -43,12 +43,16 @@ public class MarkovChains {
         int n = 0;
         int rn = r.nextInt(d.size());
         String prefix = (String) d.keySet().toArray()[rn];
-        List<String> output = new ArrayList<>(Arrays.asList(prefix.split("")));
+        List<String> output = new ArrayList<>(Arrays.asList(prefix.split(" ")));
 
         while (true) {
+            System.out.println("first pre"+prefix);
             List<String> suffix = d.get(prefix);
+            System.out.println("second pre" + prefix);
             if (suffix.size() == 1) {
-                if (Objects.equals(suffix.get(0), "")) return output.stream().reduce("", (a, b) -> a + " " + b);
+                if (Objects.equals(suffix.get(0), "")){
+                    System.out.println("emptry string");
+                    return output.stream().reduce("", (a, b) -> a + " " + b);}
                 output.add(suffix.get(0));
             } else {
                 rn = r.nextInt(suffix.size());
@@ -62,7 +66,7 @@ public class MarkovChains {
     }
 
     public static void main(String[] args) throws IOException {
-        System.out.println(markov("alice_oz.txt", 3, 200));
+        System.out.println(markov("starwars.txt", 3, 200));
     }
 }
 
