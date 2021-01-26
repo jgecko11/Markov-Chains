@@ -45,23 +45,26 @@ public class MarkovChains {
         String prefix = (String) d.keySet().toArray()[rn];
         List<String> output = new ArrayList<>(Arrays.asList(prefix.split("")));
 
-        while(true){
+        while (true) {
             List<String> suffix = d.get(prefix);
             if (suffix.size() == 1) {
                 if (Objects.equals(suffix.get(0), "")) return output.stream().reduce("", (a, b) -> a + " " + b);
                 output.add(suffix.get(0));
-                }else{
-                    rn = r.nextInt(suffix.size());
-                    output.add(suffix.get(rn));
-                }
-                if(output.size() >= outputSize) return output.stream().limit(outputSize).reduce("", (a, b) -> a + " " + b);
-                n++;
-                prefix = output.stream().skip(n).limit(keySize).reduce("", (a, b) -> a + " " + b).trim();
-
+            } else {
+                rn = r.nextInt(suffix.size());
+                output.add(suffix.get(rn));
             }
-        }
+            if (output.size() >= outputSize) return output.stream().limit(outputSize).reduce("", (a, b) -> a + " " + b);
+            n++;
+            prefix = output.stream().skip(n).limit(keySize).reduce("", (a, b) -> a + " " + b).trim();
 
+        }
     }
+
+    public static void main(String[] args) throws IOException {
+        System.out.println(markov("alice_oz.txt", 3, 200));
+    }
+}
 
 
 
