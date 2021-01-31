@@ -1,38 +1,19 @@
-The Star Wars
-by
-George Lucas
-
-
-
-Rough Draft [First of four major screenplay drafts]
-Lucasfilm Ltd.
-5/74
-
-1.  FADE IN:
-
 SPACE
-
 A sea of stars is broken by the vast blue surface of the planet, Utapau.  Five
 small moons slowly drift into view from the far side of the planet.  The main
 titles are followed by a roll-up:
-
 Until the recent Great Rebellion, the Jedi Bendu were the most feared warriors
 in the universe.  For one hundred thousand years, generations of Jedi
 perfected their art as the personal bodyguards of the emperor.  They were the
 chief architects of the invincible Imperial Space Force which expanded the
 Empire across the galaxy, from the celestial equator to the farthest reaches
 of the Great Rift.
-
 Now these legendary warriors are all but extinct.  One by one they have been
 hunted down and destroyed as enemies of the New Empire by a ferocious and
 sinister rival warrior sect, the Knights of Sith.
-
 A small silver spacecraft emerges from behind one of the Utapau moons.  The
 deadly little fightercraft speeds past several of the moons, until it finally
 goes into orbit around the fourth moon.
-
-2.  WASTELAND - FOURTH MOON - UTAPAU
-
 A harsh gale blows across the bleak grey surface of the Fourth Moon.  The
 leaden sky presses down on a lone figure, Annikin Starkiller, a tall, heavy-
 set boy of eighteen.  He slowly makes his way across the canyon floor.  The
@@ -42,9 +23,6 @@ shoulder strap on his chrome multiplelaser rifle.  Something in the sky
 catches his eye, and he instinctively grabs a pair of electrobinoculars from
 his belt.  He stands transfixed for a few moments, studying the heavens, then
 turns and rushes back in the direction from which he came.
-
-3.  SUPPLY HUT - FOURTH MOON - UTAPAU
-
 A spacecraft, half buried in the dust, rests next to the remains of an
 abandoned supply shack.  Annikin makes his way across the colorless landscape
 and rushes into the crumbling building.  The interior of the hut is shabby,
@@ -54,32 +32,23 @@ man, wearing the distinctive robes of a Jedi.  Deak is ten years old, with
 dusty blond hair and a large scratch on his cheek.  Annikin slams the door and
 removes his gear.  His ruggedly handsome face is caked with many layers of
 dust.
-
 ANNIKIN
 Dad!  Dad!...They've found us!
-
 Deak looks up from a small cube he has been studying.  His father whacks him
 across the shoulder with a braided wire connector.
-
 KANE
 Continue with the problem.  Your concentration is worse than your brother's.
 (to Annikin) How many?
-
 ANNIKIN
 Only one this time.  A Banta Four.
-
 KANE
 Good.  We may not have to repair this old bucket after all.  Prepare yourself.
-
 DEAK
 Me too!
-
 KANE
 Do you have the answer?
-
 DEAK
 I think it's the Corbet dictum:  "What is, is without."
-
 Kane smiles.  This is the correct answer.  Annikin is strapping on a utility
 belt with chrome laserpistols and lasersword.  Kane rises and starts for his
 equipment.

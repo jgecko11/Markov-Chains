@@ -18,10 +18,15 @@ public class MarkovChains {
         if (keySize < 1) throw new IllegalArgumentException("Key size can't be less than 1"); //error checker
         Path path = Paths.get(filePath);//path to file name
         byte[] bytes = Files.readAllBytes(path); //bytes are all the charcters
-        String[] words = new String(bytes).trim().split(" "); //everytime a space is hit, a new array entry is made
-        if (outputSize < keySize || outputSize >= words.length) { //the output cannnot be smaller than the key, or bigger/equal to the file
+        String[] words = new String(bytes).trim().split(" ");//everytime a space is hit, a new array entry is made
+        if (outputSize < keySize || outputSize >= words.length ) { //the output cannnot be smaller than the key, or bigger/equal to the file
             throw new IllegalArgumentException("Output size is out of range");
         }
+        /**
+        for(int i = 0; i<outputSize;i++){
+            System.out.println(words[i]);
+        }
+         **/
 
         Map<String, List<String>> d = new HashMap<>();//declare array
 
@@ -31,6 +36,7 @@ public class MarkovChains {
                 key.append(' ').append(words[j]);//puts a space between words
             }
             String value = (i + keySize < words.length) ? words[i + keySize] : "";
+
             if (!d.containsKey(key.toString())) {
                 ArrayList<String> aList = new ArrayList<>();
                 aList.add(value);
@@ -42,17 +48,20 @@ public class MarkovChains {
 
         int n = 0;
         int rn = r.nextInt(d.size());
-        String prefix = (String) d.keySet().toArray()[rn];
+        String prefix = (String)d.keySet().toArray()[rn];
         List<String> output = new ArrayList<>(Arrays.asList(prefix.split(" ")));
+        //System.out.println(d);
 
         while (true) {
-            System.out.println("first pre"+prefix);
+            //System.out.println("first pre: "+prefix);
             List<String> suffix = d.get(prefix);
-            System.out.println("second pre" + prefix);
+            //System.out.println(suffix);
+            //System.out.println("second pre: " + prefix);
             if (suffix.size() == 1) {
                 if (Objects.equals(suffix.get(0), "")){
-                    System.out.println("emptry string");
-                    return output.stream().reduce("", (a, b) -> a + " " + b);}
+                    //System.out.println("-emptry string-");
+                    return output.stream().reduce("", (a, b) -> a + " " + b);
+                    }
                 output.add(suffix.get(0));
             } else {
                 rn = r.nextInt(suffix.size());
